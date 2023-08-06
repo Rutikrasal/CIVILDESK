@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/rounded_white"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/tv_custname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="custname"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/tv_purchase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment-Out"
+            android:gravity="center"
+            android:layout_alignParentRight="true" />
+
+
+        />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:padding="5dp"
+
+            android:id="@+id/tv_viewtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total:"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/tv_rupees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:layout_marginLeft="2dp"
+
+            android:layout_toRightOf="@+id/tv_viewtotal"
+
+
+            />
+        <TextView
+            android:id="@+id/tv_totalamount"
+            android:layout_toRightOf="@+id/tv_rupees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+
+            android:textColor="@color/black"
+
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        >
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17/06/2022"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_viewbalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance:"
+            android:layout_toRightOf="@+id/tv_date"
+            android:layout_marginLeft="65dp"
+            android:padding="5dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_rupeessys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+
+            android:text="₹"
+            android:layout_toRightOf="@+id/tv_viewbalance"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/tv_balanceamount"
+            android:layout_toRightOf="@+id/tv_rupeessys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+    </RelativeLayout>
+
+</LinearLayout>

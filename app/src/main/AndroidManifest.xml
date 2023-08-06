@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dg.info.civildesk">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CivilDesk">
+        <activity android:name=".activity.AddleavesActivity"></activity>
+        <activity android:name=".activity.MakePaymentActivity" />
+        <activity android:name=".activity.AddItemforPurchaseorderActivity" />
+        <activity android:name=".activity.AddItemtoReturnActivity" />
+        <activity android:name=".activity.PurchaseBillDetailActivity" />
+        <activity android:name=".activity.CustomSelectableListActivity" />
+        <activity android:name=".activity.AddVendorActivity" />
+        <activity android:name=".activity.AddSitesActivity" />
+        <activity android:name=".activity.AddItemsActivity" />
+        <activity android:name=".activity.AddPurchaseorderActivity" />
+        <activity android:name=".activity.AddpurchasereportActivity" />
+        <activity android:name=".activity.AddPaymentoutActivity" />
+        <activity android:name=".activity.AddItemtopurchaseActivity" />
+        <activity
+            android:name=".activity.AddPurchaseBillActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".activity.LoginScreenActivity" />
+        <activity android:name=".activity.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

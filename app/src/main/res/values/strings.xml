@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Civil Desk</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="error_general">Something went wrong!!</string>
+    <string name="error_network">Please check your internet connection!!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="password">Password</string>
+
+    <string-array name="payment_type">
+        <item>Please Select Type</item>
+        <item>Cash</item>
+        <item>Check</item>
+        <item>Online</item>
+
+    </string-array>
+
+</resources>

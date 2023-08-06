@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_item"
+        android:padding="8dp"
+        android:layout_margin="5dp"
+
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_itemid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:background="@color/white"
+            android:padding="1dp"
+            />
+        <TextView
+            android:id="@+id/tv_itemname"
+            android:layout_toRightOf="@+id/tv_itemid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:text="name"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_toLeftOf="@+id/tv_finalamount"
+            android:layout_marginRight="3dp"
+
+            android:text="₹"
+            />
+        <TextView
+            android:id="@+id/tv_finalamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:text="total"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Subtotal"
+            />
+
+        <TextView
+            android:id="@+id/tv_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_into"
+            android:layout_marginRight="3dp"
+
+            android:text="Q"
+            />
+        <TextView
+            android:id="@+id/tv_into"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_rupeesrate"
+            android:layout_marginRight="3dp"
+
+            android:text="*"
+            />
+        <TextView
+            android:id="@+id/tv_rupeesrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_rate"
+            android:layout_marginRight="3dp"
+
+            android:text="₹"
+            />
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tvequal"
+            android:layout_marginRight="3dp"
+
+            android:text="rate"
+            />
+        <TextView
+            android:id="@+id/tvequal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tvrupees"
+            android:layout_marginRight="3dp"
+
+            android:text="="
+            />
+        <TextView
+            android:id="@+id/tvrupees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_subtotalamount"
+            android:layout_marginRight="3dp"
+
+            android:text="₹"
+            />
+        <TextView
+            android:id="@+id/tv_subtotalamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:text="total"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+
+        >
+        <TextView
+            android:id="@+id/tvvieivdis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount (%):"
+            android:textColor="#FFA500"
+
+            />
+        <TextView
+            android:id="@+id/tv_discountperc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFA500"
+            android:layout_toRightOf="@+id/tvvieivdis"
+
+            android:text="8"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_discountamount"
+            android:layout_marginRight="3dp"
+            android:textColor="#FFA500"
+
+            android:text="₹"
+            />
+        <TextView
+            android:id="@+id/tv_discountamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#FFA500"
+
+            android:text="total"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        >
+        <TextView
+            android:id="@+id/tvviewtax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tax"
+            />
+
+        <TextView
+            android:id="@+id/tv_gstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@id/tvviewtax"
+
+            android:text="Q"
+            />
+        <TextView
+            android:id="@+id/tv_gstperc"
+            android:layout_toRightOf="@+id/tv_gstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+
+            android:text="%"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_taxamount"
+            android:layout_marginRight="3dp"
+
+            android:text="₹"
+            />
+        <TextView
+            android:id="@+id/tv_taxamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:text="total"
+            />
+
+    </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

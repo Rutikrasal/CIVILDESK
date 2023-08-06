@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PurchaseBillDetailActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+
+                    android:background="@color/white"
+                    android:paddingBottom="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="2dp"
+                        android:layout_marginLeft="5dp"
+                        >
+                        <com.google.android.material.textfield.TextInputLayout
+
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_margin="5dp"
+
+                            app:endIconMode="custom"
+                            app:endIconTint="@color/colorPrimaryDark"
+                            android:hint=" Order No *">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_billno"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:textSize="18sp"
+
+
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            app:endIconDrawable="@drawable/ic_calendar"
+                            android:layout_margin="5dp"
+
+                            app:endIconMode="custom"
+                            app:endIconTint="@color/colorPrimaryDark"
+                            android:hint=" Date *">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_date"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:textSize="18sp"
+
+                                android:focusableInTouchMode="false"
+                                android:cursorVisible="false"
+                                android:editable="false"
+                                android:focusable="false"
+
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        app:endIconMode="custom"
+                        android:layout_margin="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        app:endIconTint="@color/colorPrimaryDark"
+                        android:hint="Customer Name">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_customername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+
+                            android:textSize="18sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        app:endIconMode="custom"
+                        android:layout_margin="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        app:endIconTint="@color/colorPrimaryDark"
+                        android:hint="Mobile Number">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_customerno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:maxLines="1"
+                            android:maxLength="10"
+
+                            android:textSize="18sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:inputType="number"
+
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        app:endIconMode="custom"
+                        android:layout_margin="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        app:endIconTint="@color/colorPrimaryDark"
+                        android:hint="Due Date">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_duedate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+
+                            android:textSize="18sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:inputType="number"
+
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/l1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_added_items"
+                            android:layout_width="match_parent"
+                            android:layout_below="@id/l1"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                            />
+
+                    </LinearLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_margin="5dp"
+
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+
+                        android:hint="Phone Number">
+                        <TextView
+                            android:id="@+id/tvadditem"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="Add Items"
+                            android:background="@drawable/rounded_editetext1"
+                            android:drawableLeft="@drawable/ic_baseline_add_circle_24"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+
+                            />
+
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@color/background"
+                    android:paddingBottom="20dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Amount:"
+                            android:layout_marginLeft="15dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="15dp"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:layout_marginBottom="10dp"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/edt_totalamount"
+                            android:text="₹"
+                            android:layout_marginTop="15dp"
+                            android:textSize="17sp"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/mydotedline"
+
+                            />
+                        <EditText
+                            android:id="@+id/edt_totalamount"
+                            android:layout_width="130dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:textStyle="bold"
+                            android:gravity="end"
+                            android:textSize="17sp"
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/mydotedline"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            android:inputType="numberDecimal"
+                            />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearlayoutamount"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_marginBottom="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Paid Amount:"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                android:textColor="@color/black"
+                                android:textSize="17sp"
+                                android:layout_marginBottom="10dp"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/edt_totalpaidamount"
+                                android:text="₹"
+                                android:layout_marginTop="15dp"
+                                android:textSize="17sp"
+                                android:textColor="@color/black"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/mydotedline"
+
+                                />
+                            <EditText
+                                android:id="@+id/edt_totalpaidamount"
+                                android:layout_width="130dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:textStyle="bold"
+                                android:gravity="end"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/black"
+                                android:background="@drawable/mydotedline"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginRight="10dp"
+                                android:inputType="numberDecimal"
+
+                                android:text="0.0" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            >
+                            <TextView
+                                android:id="@+id/tv_balance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:elevation="0dp"
+                                android:gravity="center_vertical"
+                                android:padding="2dp"
+                                android:layout_marginTop="15dp"
+                                android:text="Balance Due"
+                                android:textColor="@color/colorGreen"
+                                android:textSize="17sp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/tv_balancedue"
+                                android:text="₹"
+                                android:layout_marginTop="15dp"
+                                android:textSize="17sp"
+                                android:textColor="@color/black"
+                                android:layout_marginBottom="10dp"
+                                />
+                            <TextView
+                                android:id="@+id/tv_balancedue"
+                                android:layout_width="130dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:gravity="end"
+                                android:padding="5dp"
+                                android:layout_marginTop="15dp"
+                                android:textSize="17sp"
+                                android:textColor="@color/colorGreen"
+
+                                android:elevation="0dp"
+                                android:text="0.0" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayoutdesign"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="20dp">
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearlayoutpaytype"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="20dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_paymenttype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+
+                            android:elevation="0dp"
+                            android:gravity="center_vertical"
+                            android:padding="2dp"
+                            android:text="Payment Type"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            />
+
+                        <Spinner
+                            android:id="@+id/spn_paymenttype"
+                            android:layout_width="150dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/light_Black"
+                            android:layout_height="wrap_content"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_stateofsupply"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+
+                            android:elevation="0dp"
+                            android:gravity="center_vertical"
+                            android:padding="2dp"
+                            android:text="State of Supply"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/spn_stateofsupply"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/light_Black"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+
+                            android:textStyle="bold"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:textSize="15sp"
+                            android:elevation="0dp"
+                            android:text="+ 0.0" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearlayoutdescription"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="80dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        >
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            app:endIconMode="custom"
+                            android:layout_margin="5dp"
+
+
+                            app:endIconTint="@color/colorPrimaryDark"
+                            android:hint="Description">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_description"
+                                android:layout_width="250dp"
+                                android:layout_height="100dp"
+                                android:padding="15dp"
+                                android:gravity="start"
+
+                                android:textSize="18sp"
+                                android:focusableInTouchMode="true"
+
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <ImageView
+                            android:id="@+id/img_images"
+                            android:layout_width="80dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/light_Black"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/addimage"
+
+                            android:textStyle="bold"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:textSize="15sp"
+                            android:elevation="0dp"
+                            android:text="+ 0.0" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/ll_checkout"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/btnsavenew"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="Save and New"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save And New"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btnsave"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Save"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+
+                android:layout_gravity="end"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>
